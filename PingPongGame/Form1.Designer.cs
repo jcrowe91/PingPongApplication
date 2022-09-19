@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.playground = new System.Windows.Forms.Panel();
-            this.gameOver_Lbl = new System.Windows.Forms.Label();
-            this.points_Lbl = new System.Windows.Forms.Label();
-            this.score_Lbl = new System.Windows.Forms.Label();
+            this.gameOverLbl = new System.Windows.Forms.Label();
+            this.pointsLbl = new System.Windows.Forms.Label();
+            this.scoreLbl = new System.Windows.Forms.Label();
             this.ball = new System.Windows.Forms.PictureBox();
             this.racket = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -43,9 +43,9 @@
             // 
             // playground
             // 
-            this.playground.Controls.Add(this.gameOver_Lbl);
-            this.playground.Controls.Add(this.points_Lbl);
-            this.playground.Controls.Add(this.score_Lbl);
+            this.playground.Controls.Add(this.gameOverLbl);
+            this.playground.Controls.Add(this.pointsLbl);
+            this.playground.Controls.Add(this.scoreLbl);
             this.playground.Controls.Add(this.ball);
             this.playground.Controls.Add(this.racket);
             this.playground.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -54,36 +54,36 @@
             this.playground.Size = new System.Drawing.Size(1102, 637);
             this.playground.TabIndex = 0;
             // 
-            // gameOver_Lbl
+            // gameOverLbl
             // 
-            this.gameOver_Lbl.BackColor = System.Drawing.Color.Blue;
-            this.gameOver_Lbl.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gameOver_Lbl.Location = new System.Drawing.Point(297, 86);
-            this.gameOver_Lbl.Name = "gameOver_Lbl";
-            this.gameOver_Lbl.Size = new System.Drawing.Size(493, 401);
-            this.gameOver_Lbl.TabIndex = 4;
-            this.gameOver_Lbl.Text = "Game Over!\r\n\r\nPress Enter to Restart\r\n\r\nPress Esc to Exit";
+            this.gameOverLbl.BackColor = System.Drawing.Color.Blue;
+            this.gameOverLbl.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gameOverLbl.Location = new System.Drawing.Point(297, 86);
+            this.gameOverLbl.Name = "gameOverLbl";
+            this.gameOverLbl.Size = new System.Drawing.Size(493, 401);
+            this.gameOverLbl.TabIndex = 4;
+            this.gameOverLbl.Text = "Game Over!\r\n\r\nPress Enter to Restart\r\n\r\nPress Esc to Exit";
             // 
-            // points_Lbl
+            // pointsLbl
             // 
-            this.points_Lbl.AutoSize = true;
-            this.points_Lbl.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.points_Lbl.Location = new System.Drawing.Point(250, 9);
-            this.points_Lbl.Name = "points_Lbl";
-            this.points_Lbl.Size = new System.Drawing.Size(54, 65);
-            this.points_Lbl.TabIndex = 3;
-            this.points_Lbl.Text = "0";
-            this.points_Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pointsLbl.AutoSize = true;
+            this.pointsLbl.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pointsLbl.Location = new System.Drawing.Point(250, 9);
+            this.pointsLbl.Name = "pointsLbl";
+            this.pointsLbl.Size = new System.Drawing.Size(54, 65);
+            this.pointsLbl.TabIndex = 3;
+            this.pointsLbl.Text = "0";
+            this.pointsLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // score_Lbl
+            // scoreLbl
             // 
-            this.score_Lbl.AutoSize = true;
-            this.score_Lbl.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.score_Lbl.Location = new System.Drawing.Point(60, 9);
-            this.score_Lbl.Name = "score_Lbl";
-            this.score_Lbl.Size = new System.Drawing.Size(156, 65);
-            this.score_Lbl.TabIndex = 2;
-            this.score_Lbl.Text = "Score:";
+            this.scoreLbl.AutoSize = true;
+            this.scoreLbl.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.scoreLbl.Location = new System.Drawing.Point(60, 9);
+            this.scoreLbl.Name = "scoreLbl";
+            this.scoreLbl.Size = new System.Drawing.Size(156, 65);
+            this.scoreLbl.TabIndex = 2;
+            this.scoreLbl.Text = "Score:";
             // 
             // ball
             // 
@@ -128,9 +128,9 @@
         #endregion
 
         private System.Windows.Forms.Panel playground;
-        private System.Windows.Forms.Label gameOver_Lbl;
-        private System.Windows.Forms.Label points_Lbl;
-        private System.Windows.Forms.Label score_Lbl;
+        private System.Windows.Forms.Label gameOverLbl;
+        private System.Windows.Forms.Label pointsLbl;
+        private System.Windows.Forms.Label scoreLbl;
         private System.Windows.Forms.PictureBox ball;
         private System.Windows.Forms.PictureBox racket;
         private System.Windows.Forms.Timer timer1;

@@ -30,9 +30,9 @@ namespace PingPongGame
 
             racket.Top = playground.Bottom - (playground.Bottom / 10);
 
-            gameOver_Lbl.Left = (playground.Width / 2) - (gameOver_Lbl.Width / 2);
-            gameOver_Lbl.Top = (playground.Height / 2) - (gameOver_Lbl.Height / 2);
-            gameOver_Lbl.Visible = false;
+            gameOverLbl.Left = (playground.Width / 2) - (gameOverLbl.Width / 2);
+            gameOverLbl.Top = (playground.Height / 2) - (gameOverLbl.Height / 2);
+            gameOverLbl.Visible = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace PingPongGame
                 speedLeft += 10;
                 speedTop = -speedTop;
                 points += 1;
-                points_Lbl.Text = points.ToString();
+                pointsLbl.Text = points.ToString();
 
                 Random r = new Random();
                 playground.BackColor = Color.FromArgb(r.Next(150, 225), r.Next(150, 225), r.Next(150, 225));
@@ -101,7 +101,7 @@ namespace PingPongGame
             if (ball.Bottom >= playground.Bottom)
             {
                 timer1.Enabled = false;
-                gameOver_Lbl.Visible = true;
+                gameOverLbl.Visible = true;
             }
         }
 
@@ -116,9 +116,9 @@ namespace PingPongGame
                 ball.Left = 50;
                 speedLeft = 6;
                 speedTop = 6;
-                points_Lbl.Text = "0";
+                pointsLbl.Text = "0";
                 timer1.Enabled = true;
-                gameOver_Lbl.Visible = false;
+                gameOverLbl.Visible = false;
                 playground.BackColor = Color.White;
             }
         }
