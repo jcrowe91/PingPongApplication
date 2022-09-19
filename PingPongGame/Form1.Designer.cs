@@ -1,6 +1,6 @@
 ﻿namespace PingPongGame
 {
-    partial class Form1
+    partial class gameForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,99 +29,104 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.playground = new System.Windows.Forms.Panel();
+            this.racket = new System.Windows.Forms.PictureBox();
+            this.ball = new System.Windows.Forms.PictureBox();
+            this.score_Lbl = new System.Windows.Forms.Label();
+            this.points_Lbl = new System.Windows.Forms.Label();
+            this.gameOver_Lbl = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.playground.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.racket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ball)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // playground
             // 
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1102, 637);
-            this.panel1.TabIndex = 0;
+            this.playground.Controls.Add(this.gameOver_Lbl);
+            this.playground.Controls.Add(this.points_Lbl);
+            this.playground.Controls.Add(this.score_Lbl);
+            this.playground.Controls.Add(this.ball);
+            this.playground.Controls.Add(this.racket);
+            this.playground.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.playground.Location = new System.Drawing.Point(0, 0);
+            this.playground.Name = "playground";
+            this.playground.Size = new System.Drawing.Size(1102, 637);
+            this.playground.TabIndex = 0;
             // 
-            // pictureBox1
+            // racket
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(418, 591);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 20);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.racket.BackColor = System.Drawing.Color.Black;
+            this.racket.Location = new System.Drawing.Point(418, 591);
+            this.racket.Name = "racket";
+            this.racket.Size = new System.Drawing.Size(200, 20);
+            this.racket.TabIndex = 0;
+            this.racket.TabStop = false;
             // 
-            // pictureBox2
+            // ball
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Red;
-            this.pictureBox2.Location = new System.Drawing.Point(124, 325);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.ball.BackColor = System.Drawing.Color.Red;
+            this.ball.Location = new System.Drawing.Point(124, 325);
+            this.ball.Name = "ball";
+            this.ball.Size = new System.Drawing.Size(30, 30);
+            this.ball.TabIndex = 1;
+            this.ball.TabStop = false;
             // 
-            // label1
+            // score_Lbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Score";
+            this.score_Lbl.AutoSize = true;
+            this.score_Lbl.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.score_Lbl.Location = new System.Drawing.Point(60, 9);
+            this.score_Lbl.Name = "score_Lbl";
+            this.score_Lbl.Size = new System.Drawing.Size(156, 65);
+            this.score_Lbl.TabIndex = 2;
+            this.score_Lbl.Text = "Score:";
             // 
-            // label2
+            // points_Lbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(139, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "0";
+            this.points_Lbl.AutoSize = true;
+            this.points_Lbl.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.points_Lbl.Location = new System.Drawing.Point(250, 9);
+            this.points_Lbl.Name = "points_Lbl";
+            this.points_Lbl.Size = new System.Drawing.Size(54, 65);
+            this.points_Lbl.TabIndex = 3;
+            this.points_Lbl.Text = "0";
+            this.points_Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // gameOver_Lbl
             // 
-            this.label3.Location = new System.Drawing.Point(458, 239);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 90);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Game Over!\r\n\r\nPress F1 to Restart\r\n\r\nPress Esc to Exit";
+            this.gameOver_Lbl.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gameOver_Lbl.Location = new System.Drawing.Point(297, 86);
+            this.gameOver_Lbl.Name = "gameOver_Lbl";
+            this.gameOver_Lbl.Size = new System.Drawing.Size(428, 329);
+            this.gameOver_Lbl.TabIndex = 4;
+            this.gameOver_Lbl.Text = "Game Over!\r\n\r\nPress F1 to Restart\r\n\r\nPress Esc to Exit";
             // 
-            // Form1
+            // gameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1102, 637);
-            this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Controls.Add(this.playground);
+            this.Name = "gameForm";
+            this.Text = "Ping Pong Game";
+            this.playground.ResumeLayout(false);
+            this.playground.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.racket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ball)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel playground;
+        private System.Windows.Forms.Label gameOver_Lbl;
+        private System.Windows.Forms.Label points_Lbl;
+        private System.Windows.Forms.Label score_Lbl;
+        private System.Windows.Forms.PictureBox ball;
+        private System.Windows.Forms.PictureBox racket;
         private System.Windows.Forms.Timer timer1;
     }
 }
