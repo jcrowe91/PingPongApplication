@@ -12,14 +12,18 @@ namespace PingPongGame
 {
     public partial class gameForm : Form
     {
-        public int speedLeft = 4;
-        public int speedTop = 4;
+        public int speedLeft = 10;
+        public int speedTop = 10;
         public int points = 0;
 
 
         public gameForm()
         {
             InitializeComponent();
+
+            timer1.Enabled = true;
+            Cursor.Hide();
+
             this.FormBorderStyle = FormBorderStyle.None;
             this.TopMost = true;
             this.Bounds = Screen.PrimaryScreen.Bounds;
@@ -57,8 +61,8 @@ namespace PingPongGame
         {
             if (ball.Bottom >= racket.Top && ball.Bottom <= racket.Bottom && ball.Left >= racket.Left && ball.Right <= racket.Right)
             {
-                speedTop += 2;
-                speedLeft += 2;
+                speedTop += 10;
+                speedLeft += 10;
                 speedTop = -speedTop;
                 points += 1;
                 points_Lbl.Text = points.ToString();
@@ -106,12 +110,12 @@ namespace PingPongGame
             if (e.KeyCode == Keys.Escape)
                 Close();
             
-            if (e.KeyCode == Keys.F1)
+            if (e.KeyCode == Keys.Enter)
             {
                 ball.Top = 50;
                 ball.Left = 50;
-                speedLeft = 4;
-                speedTop = 4;
+                speedLeft = 6;
+                speedTop = 6;
                 points_Lbl.Text = "0";
                 timer1.Enabled = true;
                 gameOver_Lbl.Visible = false;

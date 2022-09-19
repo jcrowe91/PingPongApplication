@@ -56,12 +56,13 @@
             // 
             // gameOver_Lbl
             // 
+            this.gameOver_Lbl.BackColor = System.Drawing.Color.Blue;
             this.gameOver_Lbl.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.gameOver_Lbl.Location = new System.Drawing.Point(297, 86);
             this.gameOver_Lbl.Name = "gameOver_Lbl";
-            this.gameOver_Lbl.Size = new System.Drawing.Size(428, 329);
+            this.gameOver_Lbl.Size = new System.Drawing.Size(493, 401);
             this.gameOver_Lbl.TabIndex = 4;
-            this.gameOver_Lbl.Text = "Game Over!\r\n\r\nPress F1 to Restart\r\n\r\nPress Esc to Exit";
+            this.gameOver_Lbl.Text = "Game Over!\r\n\r\nPress Enter to Restart\r\n\r\nPress Esc to Exit";
             // 
             // points_Lbl
             // 
